@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  padding: 35px; 
+
+  background: rgb(243, 243, 243);
+  color: #131313;
+  font-family: "Montserrat", sans-serif;
+}
+.h {
+  margin: 15px 0;
+  font-weight: 900;
+  font-size: 28px;
+  text-align: center;
+}
+input {
+  transition: 0.5s ease-in-out;
+  margin: 10px 0;
+  font-size: 18px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.11);
+  border: none;
+}
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  margin: 35px 0;
+}
+button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  font-size: 18px;
+  transition: 0.5s ease-in-out;
+}
+label {
+  font-size: 15px;
+}
+form {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  max-width: 370px;
+  margin: 5px auto;
+}
+form button {
+  background: rgb(25, 67, 255);
+  width: 100%;
+  margin: 5px 0;
+  color: white;
+  font-weight: 540;
+}
+
+form button:hover{
+  background-color: #4361ee;
+  border: 2px solid black;
+  font-weight: bold;
+}
+.start {
+  background: rgb(48, 33, 253);
+  color: white;
+  cursor: pointer;
+
+}
+.break {
+  background: rgb(0, 199, 116);
+  color: #000000;
+  cursor: pointer;
+
+}
+.reset {
+  background: rgb(250, 69, 109);
+  color: #000000;
+  cursor: pointer;
+
+}
+.pause {
+  background: rgb(253, 143, 17);
+  cursor: pointer;
+
+}
+.resume {
+  background: rgb(131, 10, 252);
+  color: white;
+  cursor: pointer;
+
+}
+.clock {
+  padding: 3px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  height: 30%;
+  font-size: 24px;
+  /*  */
+  background-color: #fff;
+  border-radius: 20px;
+  /* margin-left: 100px; */
+  margin: 0px 100px;
+  box-shadow: 3px 3px 5px 1px grey; 
+  border: none;
+}
+.progress-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.progress-ring__circle {
+  transition: 0.5s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke: rgb(51, 65, 255);
+}
+
+footer {
+  position: fixed;
+  bottom: 4px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.danger {
+  stroke: rgb(243, 17, 28);
+  animation: pulse 0.9s ease-in-out infinite;
+}
+
+.submit{cursor: pointer;
+
+}
+@keyframes pulse {
+  0%,
+  100% {
+    transform: rotate(-90deg) scale(1);
+  }
+  50% {
+    transform: rotate(-90deg) scale(1.05);
+  }
+  75% {
+    transform: rotate(-90deg) scale(0.8);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "head head"
+      "clock form"
+      "btns ji";
+  }
+  .btn-group {
+    grid-area: btns;
+    justify-content: center;
+  }
+  .clock {
+    grid-area: clock;
+    height: 100%;
+  }
+  h1 {
+    grid-area: head;
+
+    align-self: center;
+  }
+  form {
+    align-self: center;
+    justify-self: center;
+    grid-area: form;
+    width: 50%;
+    justify-content: space-around;
+  }
+  footer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  form {
+    height: 40%;
+  }
+  footer {
+    position: static;
+  }
+}
+
+
+
+/* quotes */
+
+.outer{
+ 
+  text-align: center;
+  margin-bottom: 30px;
+  
+  display: flex;
+  flex-wrap: wrap;
+ position: relative;
+ margin-left: 100px;
+  
+ } 
+
+.inner{
+  display: flex;
+  flex-wrap: wrap;
+  position:fixed;
+ border:0px solid #ddd;
+  height:50px;
+  line-height:50px;
+  font-size:45px;
+  text-transform:uppercase;
+  overflow:hidden;
+  display:inline-block;
+  font-size:30px; 
+  margin-left: 30px;
+  align-items: center;
+  
+  /* text-align: justify; */
+
+ } 
+ .inner span{
+  animation:animate 10s ease infinite;
+  position:relative;
+  color:black;
+}
+@keyframes animate{
+  0%,100%{
+    top:0;
+  }
+  20%{
+    top:0px;
+  }  
+  25%{
+    top:-50px;
+  }
+  45%{
+    top:-50px;
+  }
+  50%{
+    top:-100px;
+  }
+  70%{
+    top:-100px;
+  }
+  75%{
+    top:-150px;
+  }
+  95%{
+    top:-150px;
+  }
+  
+} 
