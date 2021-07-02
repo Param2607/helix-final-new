@@ -49,8 +49,8 @@
   .company-info{
     /* background:#ffc9c9; */
     background: whitesmoke;
-    border-top-left-radius: 10px;
-    /* border-bottom-left-radius: 10px; */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     
 
 
@@ -142,6 +142,11 @@ color: white;
     .company-info h3, .company-info ul, .brand{
       text-align: left;
     }
+
+    .contact{
+      /* border-top-left-radius: 20px; */
+      /* border-top-right-radius: 20px; */
+    }
   }
 
 
@@ -159,4 +164,19 @@ color: white;
     text-decoration: none;
     color:white;
     font-weight: bold;
+  }
+
+
+  @media(max-width:700px){
+
+    .contact{
+      border-bottom-left-radius: 20px;
+     border-top-right-radius: 0px;
+    }
+
+    .company-info{
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
   }

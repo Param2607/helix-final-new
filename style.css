@@ -964,7 +964,7 @@ background-size: 120%;
   .weain button{
 	 text-align: center;
 	 margin: auto;
-	margin-left: 650px;
+	margin-left: 590px;
 	  padding: 15px;
 	  color: white;
 	  font-size: 20px;
@@ -983,3 +983,137 @@ background-size: 120%;
   .weain button:hover{
 	  background-color: #DC143C;
   }
+
+  /* mobile */
+
+  @media only screen and (max-width: 600px) {
+	.ani{
+		margin-top: 20px;
+	}
+	.timer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+   
+   background-image: url(images/Group\ 1.svg);
+   background-repeat: no-repeat;
+   background-size: 120%;
+   text-align: center;
+   overflow: hidden;
+   padding-bottom: 50px;
+    }  
+   
+    .timer img{
+       height: 350px;
+       width: 500px;
+       overflow: hidden;
+
+    }
+
+    
+        
+        
+          .time-cont{
+            overflow:hidden;
+          }
+        
+        
+          
+
+          .foco {
+            padding: 11;
+      
+        } 
+
+		.outline{
+			text-align: center;
+		}
+		.weain button{
+			margin-left: 190px;
+		}
+
+
+		 .timer h5{
+		font-size: 20px;
+	}
+   
+   
+
+    .dropping-texts{
+		font-size: 30px;
+	}
+        
+        
+          .time-cont{
+            overflow:hidden;
+			font-size: 30px;
+          }
+
+		  }
+
+
+
+
+  @media only screen and (min-width: 600px)and (max-width:900px){
+
+
+	.foco {
+		padding: 11;
+  
+	} 
+	.outline{
+		text-align: center;
+	}
+	.weain button{
+		margin-left: 350px;
+	}
+	.container{
+		margin-bottom: 250px;
+	} 
+
+	.timer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+   background-image: url(images/Group\ 1.svg);
+   background-repeat: no-repeat;
+   background-size: 120%;
+   text-align: center;
+   overflow: hidden;
+   padding-bottom: 50px;
+   padding: 90px 30px;
+    padding-left: 5px;
+		font-size: 15px;
+
+    }   
+	.timer h5{
+		font-size: 20px;
+	}
+   
+    .timer img{
+		padding-left: 10px;
+       height: 350px;
+       width: 500px;
+       overflow: hidden;
+
+    } 
+
+    .dropping-texts{
+		font-size: 30px;
+	}
+        
+        
+          .time-cont{
+            overflow:hidden;
+			font-size: 30px;
+          }
+        
+    
+
+          .foco {
+            padding: 11;
+      
+        }  
+
+		
+  }  
